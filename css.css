@@ -1,0 +1,93 @@
+*{
+padding:0;
+margin:0;
+text-decoration: none;
+}
+body{
+    /* position:relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #202632;
+    flex-direction: column;
+
+}
+.container
+{
+position: relative;
+background-color: #313a49;
+width: 40%;
+min-height: 30%;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+transition: all 0.3s ease;
+
+}
+.container h6 , p {
+    color: #52feaa;
+    font-size: 20px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: sans-serif;
+}
+p{
+    line-height: 50px;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+a{
+    color: #52feaa;
+    transition: all 0.3s ease;
+}
+a:hover{
+    text-shadow: 0 0 10px;
+}
+.container .click{
+    position: absolute;
+    cursor: pointer;
+    bottom: -20px;
+    left: 50%;
+    background-color: #52feaa;
+    padding: 15px;
+    border-radius: 50%;
+    transform: translate(-50%);
+    transition: all 0.3s ease;
+}
+.line{
+    left: 0;
+    width: 80%;
+    margin-bottom: 40px;
+}
+.name{
+    margin: 20px 0;
+    font-size: 15px;
+}
+.sp{
+    color: #52feaa;
+}
+.container .click:hover{
+    box-shadow: 0 0 10px #52feaa;
+}
+
+@media (max-width:768px) {
+    .container h6{
+        font-size: 13px;
+    }
+     p  {
+        font-size:10px
+    }
+    .container{
+width: 80%;
+    }
+    .container .click{
+        padding: 10px;
+    }
+    .name{
+        font-size: 10px;
+    }
+}
